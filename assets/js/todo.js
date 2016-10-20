@@ -3,6 +3,11 @@ $("ul").on("click", "li", function(){
 	$(this).toggleClass("completed");
 });
 
+// Check Off Specific Todos By Clicking
+$("ul").on("click", "li", function(){
+	$(this).toggleClass("completed");
+});
+
 // Click on x to delete todo
 $("ul").on("click", "span", function(event){
 	//fadeOut callback function is necessary for REMOVE to work after async event
